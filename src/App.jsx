@@ -1,6 +1,7 @@
 import { Container, Box, Heading, Center } from '@chakra-ui/react';
 import { List } from './components/List';
 import { Header } from './components/Header';
+import React from 'react';
 
 function App() {
    return (

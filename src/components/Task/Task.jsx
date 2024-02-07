@@ -79,7 +79,7 @@ export const Task = ({ task, handleToggle, handleRemove, editingTask }) => {
                   variant="solid"
                   bg="red.300"
                   size="auto"
-                  p={'5px'}
+                  p={'10px'}
                   fontSize={'calc(9px + 8 * (100vw - 320px) / 880)'}
                   fontWeight={400}
                   rightIcon={<FaTrash />}
@@ -95,7 +95,7 @@ export const Task = ({ task, handleToggle, handleRemove, editingTask }) => {
                   variant="solid"
                   bg="orange"
                   size="auto"
-                  p={'5px'}
+                  p={'10px'}
                   fontSize={'calc(9px + 8 * (100vw - 320px) / 880)'}
                   fontWeight={400}
                   rightIcon={<FaPen />}
