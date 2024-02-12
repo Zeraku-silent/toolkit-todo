@@ -17,13 +17,16 @@ const tasksReducer = createSlice({
          state.tasks = state.tasks.filter((task) => task.id !== action.payload);
       },
       toggleCheckbox(state, action) {
-         const task = state.tasks[action.payload.id];
-         task.checked = task.checked !== task.checked;
-         return state;
+         const checkTask = state.tasks.find(
+            (task) => task.id === action.payload
+         );
+         checkTask.checked = !checkTask.checked;
       },
       edditTask(state, action) {
-         const task = state.tasks[action.payload.id];
-         task.text = action.payload.text;
+         const taskEddit = state.tasks.find(
+            (task) => task.id === action.payload.id
+         );
+         taskEddit.text = action.payload.text;
       },
       loadStorage(state, action) {
          state.tasks = action.payload;
